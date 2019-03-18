@@ -1,0 +1,11 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zw-xaiochen/hello-world  #git仓库地址
+          username: #访问git仓库的用户名(如果Git仓库为公开仓库，可以不填写用户名和密码，如果是私有仓库需要填写)
+          password: #访问git仓库的用户密码
+      label: master #配置仓库的分支
