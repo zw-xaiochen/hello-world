@@ -13,7 +13,3 @@ eureka:
 ribbon:
   eureka:
     enabled: true
-
-spring:
-  application:
-    name: user-home
