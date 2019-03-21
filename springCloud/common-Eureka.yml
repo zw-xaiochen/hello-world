@@ -1,7 +1,7 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka1.com:8761/eureka/,http://eureka.com:8762/eureka/        # 服务注册路径
+      defaultZone: http://eureka1.com:8761/eureka/,http://eureka2.com:8762/eureka/        # 服务注册路径
     fetch-registry: true   #是否检索服务 是否从server获取信息，由于此处是单点server 所以不需要同步信息
     healthcheck:
       enabled: false  # 开启健康检查（依赖spring-boot-starter-actuator）
