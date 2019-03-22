@@ -1,1 +1,3 @@
-hello:测试config-server是否能从github上拉取到文件
+server:
+  error:
+    path: /error
