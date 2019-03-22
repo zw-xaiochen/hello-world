@@ -2,7 +2,7 @@ zuul: # 开启了网关服务后,按照原各个服务暴露出来的路径访�
   routes: # routes to serviceId 这里边是通过serviceid来绑定地址，当在路径后添加/api-**/ 则是访问serve-id对应的服务。
     api-user:
     path: /api-user/**
-    serve-id: user-home
+    serveId: user-home
     api-infomation:
     path: /api-infomation/**
-    serve-id: infomation
+    serveId: infomation
