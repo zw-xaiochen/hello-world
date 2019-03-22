@@ -1,4 +1,6 @@
 zuul:
+  #所有请求都跳过默认路由 Zuul在注册到Eureka服务中心之后，它会为Eureka中的每个服务都创建一个默认的路由规则，默认规则的path会使用serviceId配置的服务名作为请求前缀
+  ignored-services: '*'
   routes: # routes to serviceId 这里边是通过serviceid来绑定地址，当在路径后添加/api-**/ 则是访问serve-id对应的服务。
     user-home:
       path: /api-user/**
