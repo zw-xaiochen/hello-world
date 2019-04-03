@@ -1,0 +1,21 @@
+spring:
+  gateway:
+     loadbalancer:
+       use404: true #如果服务的实例找不到,返回404
+     discovery:
+       locator:
+         enabled: true #是否与服务发现组件进行结合(开启后,会默认为所使用服务进行转发操作(使用服务名称路由))
+         lower-case-service-id: true #不必非要用大写service_id去访问了
+     metrics:
+       enabled: true
+#     routes:
+#       - id: user-home  #表示路由的唯一id
+#         uri: lb:/user-home #指向注册中心的服务，使用lb:// 加上ServiceName，当然也可以通过http://localhost:8080指向
+#       - predicates:  #表示要进行断言
+#         - Path=/api-user/**
+#         filters: # 过滤器
+#         - StripPrefix= 1 #截取url
+#         - Custom # 自定义过滤器
+#         - name:size
+#           args:       #过滤器参数
+#
