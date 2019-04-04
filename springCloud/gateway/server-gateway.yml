@@ -1,3 +1,5 @@
+spring:
+  cloud:
    gateway:
      loadbalancer:
        use404: true #如果服务的实例找不到,返回404
